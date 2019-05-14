@@ -4,7 +4,10 @@ STAT 418, HW#3
 **1. In command line, change directory to the docker folder and run: docker-compose up** <br/>
    &nbsp;&nbsp;&nbsp;&nbsp;If there is an error like "ModuleNotFoundError: No module named 'statsmodels'", try: docker images ls <br/>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If there is a docker_flask image, run: docker rmi docker_flask -f <br/>
-
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You may get a warning similar to this " WARNING: Image for service flask was built because it did not already exist. <br/>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To rebuild this image you must use 'docker-compose build' or 'docker-compose up --build'. Recreating docker_flask_1 ...". <br/>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When prompted with "Continue with the new image? [yN]", type "y" and hit ENTER. <br/>
+ 
 After you see, something like this: <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;Starting docker_flask_1 ... done <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;Attaching to docker_flask_1 <br/>
