@@ -1,25 +1,20 @@
 # Mtcars-Flask-Api
 STAT 418, HW#3
 
-**1. In command line, change directory to the docker folder and run: docker-compose up** <br/>
-   &nbsp;&nbsp;&nbsp;&nbsp;If there is an error like "ModuleNotFoundError: No module named 'statsmodels'", try: docker images ls <br/>
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If there is a docker_flask image, run: docker rmi docker_flask -f <br/>
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You may get a warning similar to this " WARNING: Image for service flask was built because it did not already exist. <br/>
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To rebuild this image you must use 'docker-compose build' or 'docker-compose up --build'. Recreating docker_flask_1 ...". <br/>
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When prompted with "Continue with the new image? [yN]", type "y" and hit ENTER. <br/>
- 
+**1. In command line, change directory to the docker folder and run: docker-compose up --build** <br/>
+
 After you see, something like this: <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;Starting docker_flask_1 ... done <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;Attaching to docker_flask_1 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;flask_1  |  * Serving Flask app "server" (lazy loading) <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;flask_1  |  * Environment: production <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;flask_1  |    WARNING: Do not use the development server in a production environment. <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;flask_1  |    Use a production WSGI server instead. <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;flask_1  |  * Debug mode: on <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;flask_1  |  * Running on ht<span>tp://</span>0.0.0.0:####/ (Press CTRL+C to quit) <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;flask_1  |  * Restarting with stat <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;flask_1  |  * Debugger is active! <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;flask_1  |  * Debugger PIN: ###-###-### <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Starting docker_flask_1 ... done <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attaching to docker_flask_1 <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flask_1  |  * Serving Flask app "server" (lazy loading) <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flask_1  |  * Environment: production <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flask_1  |    WARNING: Do not use the development server in a production environment. <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flask_1  |    Use a production WSGI server instead. <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flask_1  |  * Debug mode: on <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flask_1  |  * Running on ht<span>tp://</span>0.0.0.0:####/ (Press CTRL+C to quit) <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flask_1  |  * Restarting with stat <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flask_1  |  * Debugger is active! <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flask_1  |  * Debugger PIN: ###-###-### <br/>
 
 
 **2. Open a new terminal (be in the same directory) and run the following curl command: curl ht<span>tp://</span>localhost:5000/** <br/>
